@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Technical Documentation Page</title>
+</head>
+
+<body>
+	<nav id="navbar">
+		<header>
+			<h1>GitHub Flow</h1>
+		</header>
+		<ul>
+			<li><a href="#Understanding_the_GitHub_flow" class="nav-link">Understanding the GitHub flow</a></li>
+			<li><a href="#Create_a_branch" class="nav-link">Create a branch</a></li>
+			<li><a href="#Add_commits" class="nav-link">Add commits</a></li>
+			<li><a href="#Open_a_Pull_Request" class="nav-link">Open a Pull Request</a></li>
+			<li><a href="#Discuss_and_review_your_code" class="nav-link">Discuss and review your code</a></li>
+			<li><a href="#Deploy" class="nav-link">Deploy</a></li>
+			<li><a href="#Merge" class="nav-link">Merge</a></li>
+			<li><a href="#Reference" class="nav-link">Reference</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<div class="social">
+			<a href="#" target="_blank">
+				<img alt="Follow me at CodePen" title="Follow me at CodePen" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png">
+			</a>
+			<a href="#" target="_blank">
+				<img alt="Follow me at GitHub" title="Follow me at GitHub" src="https://i.imgur.com/uqqn2D2.png">
+			</a>
+		</div>
+	</footer>
+	<main id="main-doc">
+		<section class="main-section" id="Understanding_the_GitHub_flow">
+			<header>
+				<h2>Understanding the GitHub flow</h2>
+			</header>
+			<p>GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide explains how and why GitHub Flow works.</p>
+			<p>What you can learn?</p>
+			<ul>
+				<li>Create a branch</li>
+				<li>Add commits</li>
+				<li>Open a Pull Request</li>
+				<li>Discuss and review your code</li>
+				<li>Deploy</li>
+				<li>Merge</li>
+			</ul>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Create_a_branch">
+			<header>
+				<h2>Create a branch</h2>
+			</header>
+			<p>When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.</p>
+			<p>When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the <code>master</code> branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.</p>
+			<p>Branching is a core concept in Git, and the entire GitHub flow is based upon it. There's only one rule: anything in the <code>master</code> branch is always deployable.</p>
+			<p>Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., <code>refactor-authentication</code>, <code>user-content-cache-key</code>, <code>make-retina-avatars</code>), so that others can see what is being worked on.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Add_commits">
+			<header>
+				<h2>Add commits</h2>
+			</header>
+			<p>Once your branch has been created, it's time to start making changes. Whenever you add, edit, or delete a file, you're making a commit, and adding them to your branch. This process of adding commits keeps track of your progress as you work on a feature branch.</p>
+			<p>Commits also create a transparent history of your work that others can follow to understand what you've done and why. Each commit has an associated commit message, which is a description explaining why a particular change was made. Furthermore, each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.</p>
+			<p>Commit messages are important, especially since Git tracks your changes and then displays them as commits once they're pushed to the server. By writing clear commit messages, you can make it easier for other people to follow along and provide feedback.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Open_a_Pull_Request">
+			<header>
+				<h2>Open a Pull Request</h2>
+			</header>
+			<p>Pull Requests initiate discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.</p>
+			<p>You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.</p>
+			<p>Pull Requests are useful for contributing to open source projects and for managing changes to shared repositories. If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider. If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the master branch.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Discuss_and_review_your_code">
+			<header>
+				<h2>Discuss and review your code</h2>
+			</header>
+			<p>Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments. Perhaps the coding style doesn't match project guidelines, the change is missing unit tests, or maybe everything looks great and props are in order. Pull Requests are designed to encourage and capture this type of conversation.</p>
+			<p>You can also continue to push to your branch in light of discussion and feedback about your commits. If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.</p>
+			<p>Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Deploy">
+			<header>
+				<h2>Deploy</h2>
+			</header>
+			<p>With GitHub, you can deploy from a branch for final testing in production before merging to master.</p>
+			<p>Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Merge">
+			<header>
+				<h2>Merge</h2>
+			</header>
+			<p>Now that your changes have been verified in production, it is time to merge your code into the master branch.</p>
+			<p>Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.</p>
+			<p>By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase <code>Closes #32</code> would close issue number 32 in the repository.</p>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+		<section class="main-section" id="Reference">
+			<header>
+				<h2>Reference</h2>
+			</header>
+			<ul>
+				<li><a href="https://guides.github.com/" target="_blank">GitHub Guides</a></li>
+				<li><a href="https://help.github.com/" target="_blank">GitHub Help</a></li>
+				<li><a href="https://www.youtube.com/githubguides" target="_blank">Video Guides</a></li>
+			</ul>
+			<div class="toTop">
+				<a href="#top" class="top">Top</a>
+			</div>
+		</section>
+	</main>
+	
+
+</body>
+
+</html>
